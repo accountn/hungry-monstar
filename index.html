@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Hungry monstar</title>
 </head>
+
 <body>
-    <h1>My Name is helal</h1>
+    <div class="container">
+        <form>
+            <div class="input-group">
+                <input type="text" id="searchProduct" placeholder="search food item">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-primary" id="search_button">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="productInfo"></div>
+
+
+
     <script src="api.js">
 
     </script>
 </body>
+
 </html>

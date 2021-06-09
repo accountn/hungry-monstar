@@ -1,0 +1,31 @@
+.imgSize img{
+    height: 350px;
+    width: 400px;
+}
+ 
+ #productInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+    
+}
+
+
+.input-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);     
+}
+.input-group-append{
+    margin: 10px;
+}
+.container{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 250px;
+}
+
+
+/* #search_button{
+    padding: 10px 10px;
+} */
