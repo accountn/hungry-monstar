@@ -1,11 +1,11 @@
 .imgSize img{
-    height: 350px;
-    width: 400px;
+    height: 250px;
+    width: 300px;
 }
  
  #productInfo {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     text-align: center;
     
@@ -23,6 +23,18 @@
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: 250px;
+}
+
+.foodMake img{
+    width: 250px;
+    height: 200px;
+    margin-left: 500px;
+}
+.ulText li{
+    text-align: center;
+}
+.foodMake h1{
+    text-align: center;
 }
 
 
