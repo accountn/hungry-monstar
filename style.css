@@ -1,3 +1,7 @@
+body{
+    text-align: center;
+}
+
 .imgSize img{
     height: 250px;
     width: 300px;
@@ -28,13 +32,15 @@
 .foodMake img{
     width: 250px;
     height: 200px;
-    margin-left: 500px;
+    /* margin-left: 500px; */
 }
-.ulText li{
-    text-align: center;
-}
+
 .foodMake h1{
     text-align: center;
+}
+
+ol{
+    list-style-type: none;
 }
 
 

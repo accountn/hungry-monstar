@@ -7,7 +7,7 @@ function getFoodInfo(inputValue) {
 }
 
 
-document.getElementById("search_button").addEventListener("click", function () {
+document.getElementById("search_button").addEventListener("click",  () => {
     const inputValue = document.getElementById("searchProduct").value;
     getFoodInfo(inputValue);
 });
@@ -22,10 +22,10 @@ const getData = data => {
         const div = document.createElement('div');
         div.className = 'imgSize';
         const divDetail = `
-            <img src="${element.strMealThumb}">
-            <h4>${element.strMeal}</h4>
-            <button onclick="getFood('${element.idMeal}')">shod details</button>
-            
+            <div onclick="getFood('${element.idMeal}')">
+                <img src="${element.strMealThumb}">
+                <h4>${element.strMeal}</h4>
+            </div>          
         `;
         div.innerHTML = divDetail;
         divInfo.appendChild(div);
@@ -52,17 +52,15 @@ const foodInfo= data => {
 
         newFoodInfo.innerHTML = `
             <img src="${element.strMealThumb}">
-            <h1>${element.strMeal}</h1>
-            <div class="ulText">
-                <ul>
+            <h1>${element.strMeal}</h1>      
+                <ol>
                     <li>${element.strIngredient1}</li>
                     <li>${element.strIngredient2}</li>
                     <li>${element.strIngredient3}</li>
                     <li>${element.strIngredient4}</li>
                     <li>${element.strIngredient5}</li>
                     <li>${element.strIngredient6}</li>
-                </ul>
-            </div>
+                </ol>
         `;
         //newFoodInfo.appendChild(newFoodInfo);
     });
